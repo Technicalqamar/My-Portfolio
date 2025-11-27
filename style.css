@@ -1,0 +1,319 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif ;
+}
+
+body
+{
+    color: #ededed;
+    background-color: #081b29;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.pic{
+    height: 250px;
+    width: 250px;
+    background-image: url(./assets/pic\ 2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transition: .5s;
+    opacity: 0;
+    animation: slideRight .7s ease forwards;
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+
+.navbar a:hover{
+    color: #0ef;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    /* background: url(./assets/my\ portfolio\ pic.jpg) no-repeat; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 10px;
+    color: #0ef;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3 o;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .1s;
+}
+
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2PX solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay:.3s ;
+}
+
+.home-sci a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn-box{
+    display: inline block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards ;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan, 
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan 
+}
+
+
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.sub-title span {
+    color: #0ef;
+}
+
+.container{
+    padding: 90px;
+    background-color: #081b29;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.Bg-1{
+    background-image: url(./assets/Google\ form.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    
+}
+
+.Bg-2{
+    background-image: url(./assets/Layout.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.Bg-3{
+    background-image: url(./assets/color\ Palette.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+button{
+   display: inline block;
+    padding: 12px 16px;
+    background-color: rgb(164, 164, 83);
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards ;
+    animation-delay: 2s;
+  
+
+}
+button:hover{
+    box-shadow: 0 0 5px  rgb(233, 161, 88), 
+    0 0 25px  rgb(233, 161, 88), 0 0 50px  rgb(233, 161, 88),
+    0 0 100px  rgb(233, 161, 88), 0 0 200px rgb(233, 161, 88) 
+}
+.btn-1{
+     position: absolute;
+    bottom: 10px;
+    right: 5%;
+}
+.btn-2{
+     position: absolute;
+    bottom: 10px;
+    left: 5%;
+}
+
+.services-list div {
+    position: relative;
+    height: 300px;
+    padding: 40px;
+    border-right: 10px;
+    border-radius: 20px;
+    /* transition: background 0.5s transform 0.5s; */
+    box-shadow: 1px 1px 20px #2fa869f7,
+                1px 1px 40px #42cdc3f7
+
+}
+
+.services-list div:hover{
+  /* background-image: url(./assets/profile\ pic.jpg); */
+      opacity: 0;
+       animation: slideTop 2s ease forwards;
+    animation-delay: .1s;
+    cursor: pointer;
+   
+}
+
+
+
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+       100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+    
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+       100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+    
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+       100%{
+        transform: translateY(0px);
+        opacity: 1;
+        }
+    }
+
+        
+@keyframes slideLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+       100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width:805px) {
+    .navbar a{
+        display: none;
+    }
+    
+    .header{
+        justify-content: center;
+    }
+}
+            
+
