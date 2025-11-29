@@ -250,7 +250,7 @@ button:hover{
 .services-list div:hover{
   /* background-image: url(./assets/profile\ pic.jpg); */
       opacity: 0;
-       animation: slideTop 2s ease forwards;
+       animation: slideTop 0.5s ease forwards;
     animation-delay: .1s;
     cursor: pointer;
    

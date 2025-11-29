@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+    /* overflow-y: scroll; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    width: 70%;
+    /* height: 450px; */
+    
+}
+
+.white-box{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    height: 80%;
+    width: 100%;
+    
+}
+
+.content-box{
+    /* background-color: yellow; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.title{
+    font-size: 2em;
+}
+.right-box{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 50%;
+}
+
+.inp-box{
+    /* background-color: blue; */
+    /* height: 30px; */
+    width: 70%;
+    position: absolute;
+    top: 38%;
+    right: 10px;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.inp-box2{
+    /* background-color: blue; */
+    /* height: 30px; */
+    width: 70%;
+    position: absolute;
+    top: 55%;
+    right: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 3%;
+}
+.btn{
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+/* 
+.input-box{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-bottom: 50px;
+    width: 50%;
+    
+}
+
+.input-box > input {
+    width: 70%;
+    background-color: transparent;
+    padding: 3%;
+}
+
+.input-box > button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 30px;
+} */
+
+.links-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.right{
+    display: flex;
+    gap: 15px;
+
+}
+
+    
+
+
+
+
+/* Large screens: 1200px and up (slightly narrower card) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 40px 80px;
+  }
+  .form-card {
+    width: 720px;
+    margin: 0 auto;
+    padding: 48px;
+    border-radius: 12px;
+  }
+  .logo {
+    font-size: 34px;
+    margin-bottom: 28px;
+  }
+  .form-row input,
+  .form-row textarea {
+    font-size: 16px;
+    height: 48px;
+  }
+  .btn {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+}
+
+/* Medium screens / tablets: up to 1199px and down to 769px */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .container {
+    padding: 32px 40px;
+  }
+  .form-card {
+    width: 640px;
+    margin: 0 auto;
+    padding: 36px;
+  }
+  .logo {
+    font-size: 30px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  .form-row {
+    display: block; /* stack fields vertically */
+  }
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 44px;
+    margin-bottom: 12px;
+  }
+  .btn {
+    display: inline-block;
+    width: auto;
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+
+/* Small screens / phones: up to 768px */
+@media (max-width: 768px) {
+  .container {
+    padding: 18px;
+  }
+  .form-card {
+    width: 100%;
+    margin: 0 8px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .logo {
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  /* If you used two-column layout for inputs (name / email) — stack them */
+  .form-row.two-col {
+    display: flex;
+    gap: 12px;
+    flex-direction: column; /* stack on small */
+  }
+
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+    height: 44px;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Make big circular button full-width or centered */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+}
+
+/* Extra small phones (narrow) <= 420px: tighten spacing */
+@media (max-width: 420px) {
+  .container { padding: 12px; }
+  .form-card { padding: 14px; margin: 0 6px; }
+  .logo { font-size: 20px; margin-bottom: 12px; }
+  .form-row input,
+  .form-row textarea { height: 40px; font-size: 14px; padding: 8px; }
+  .btn { padding: 10px; font-size: 15px; border-radius: 6px; }
+}
+
+/* Optional: responsive adjustments for left-side desktop nav (if exists) */
+@media (max-width: 1024px) {
+  .side-nav, .left-column {
+    display: none; /* hide long left dock on smaller screens */
+  }
+  .main-content {
+    width: 100%;
+  }
+}
+
+/* Accessibility / touch target increase */
+@media (pointer: coarse) {
+  .btn, .form-row input, .form-row textarea {
+    touch-action: manipulation;
+  }
+}
+
