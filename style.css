@@ -249,10 +249,11 @@ button:hover{
 
 .services-list div:hover{
   /* background-image: url(./assets/profile\ pic.jpg); */
-      opacity: 0;
-       animation: slideTop 0.5s ease forwards;
-    animation-delay: .1s;
+    opacity: 0;
+    animation: slideLeft 0.1s ease forwards;
+    animation-delay: 0.2s;
     cursor: pointer;
+    transition: transform 0.5s ease;
    
 }
 
